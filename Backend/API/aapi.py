@@ -9,7 +9,7 @@ api = Api(app)
 class Users(Resource):
     # methods go here
     def get(self):
-        data = pd.read_csv('./API/users.csv')  # read CSV
+        data = pd.read_csv('C:/xampp/htdocs/ocr/Backend/API/users.csv')  # read CSV
         data = data.to_dict()  # convert dataframe to dictionary
         return {'data': data}, 200  # return data and 200 OK code
         #return {'data': "works"}, 200  # return data and 200 OK code
@@ -18,7 +18,7 @@ class Users(Resource):
 
 class Locations(Resource):
     def get(self):
-        data = pd.read_csv('./API/locations.csv')  # read CSV
+        data = pd.read_csv('C:/xampp/htdocs/ocr/Backend/API/locations.csv')  # read CSV
         data = data.to_dict()  # convert dataframe to dictionary
         return {'data': data}, 200  # return data and 200 OK code
         #return {'data': "works"}, 200  # return data and 200 OK code
