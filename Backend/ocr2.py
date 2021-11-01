@@ -31,8 +31,10 @@ cv2.imwrite(filename, gray)
 text = pytesseract.image_to_string(Image.open(filename))
 os.remove(filename)
 print(text)
+file1 = open("MyFile.txt","a")
+file1.write(text)
 
 # show the output images
-cv2.imshow("Image Input", images)
-cv2.imshow("Output In Grayscale", gray)
+#cv2.imshow("Image Input", images)
+#cv2.imshow("Output In Grayscale", gray)
 cv2.waitKey(0)
