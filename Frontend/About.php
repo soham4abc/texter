@@ -27,7 +27,7 @@
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="WebAboutPage.html">About</a>
+  <a class="navbar-brand" href="About.php">About</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -37,7 +37,7 @@
         <a class="nav-link" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="WebAboutPage.html">About</a>
+        <a class="nav-link" href="About.php">About</a>
       </li>    
     </ul>
   </div>  
