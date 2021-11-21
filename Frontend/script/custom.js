@@ -1,6 +1,6 @@
-url="https://1251-103-77-45-130.ngrok.io/"
+url = "http://13.234.136.230/imagetotext/web/Backend/"
 $(document).ready(function() {
-    
+
     // $(".chosen-select").chosen({
     //     no_results_text: "Oops, nothing found!"
     // });
@@ -16,7 +16,7 @@ $(document).ready(function() {
         //  xhr.setRequestHeader("My-First-Header", "first value"); 
         //  xhr.setRequestHeader("My-Second-Header", "second value"); 
         //}
-    }).done(function(data) { 
+    }).done(function(data) {
         console.log(data);
         // $.each(data.records,function(i,obj)
         //         {
@@ -26,7 +26,7 @@ $(document).ready(function() {
         //         $(div_data).appendTo('#select_property'); 
         //         });
     });
-  
+
 });
 
 const toBase64 = file => new Promise((resolve, reject) => {
@@ -37,8 +37,8 @@ const toBase64 = file => new Promise((resolve, reject) => {
 });
 
 async function Main() {
-  const file = document.querySelector('#UnprocessedImage').files[0];
-  console.log(await toBase64(file));
+    const file = document.querySelector('#UnprocessedImage').files[0];
+    console.log(await toBase64(file));
 }
 
 Main();
