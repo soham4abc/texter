@@ -29,4 +29,4 @@ api.add_resource(Users, '/users')  # '/users' is our entry point for Users
 api.add_resource(Locations, '/locations')  # and '/locations' is our entry point for Locations
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=80)  # run our Flask app
+    app.run(host="0.0.0.0", port=81)  # run our Flask app
