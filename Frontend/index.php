@@ -54,12 +54,11 @@
       <h2>Why use our service?</h2>
       <ol>
         <li>No data logging.</li>
-        <li>Ad free service.</li>
         <li>Updated regularly</li>
       </ol>
     </div>
     <div class="col-sm-8">
-      <h2>Online Image to PDF Converter</h2>
+      <h2>Online Image to text Converter</h2>
       <p>In the new normal situation, caused by the worldwide pandemic, it is obvious that online class is the only way. </p>
       <p>But with online classes, images are the way of sharing notes. But it comes with obvious cons. Copying the notes is both time and energy consuming.</p>
       <p>We are here to help. We bring you a free online image to PDF converter. </p>
@@ -67,7 +66,7 @@
       <h2>How to Use</h2>
       <p>Upload the photo in the place provided and upload it</p>
       <p>Wait for a few seconds and your file is prepared.</p>
-      <p>Download your PDF.</p>
+      <p>Download your txt file.</p>
     </div>
   </div>
 </div>
