@@ -70,12 +70,13 @@
     </div>
   </div>
 </div>
-<form class="jumbotron text-center">
+<div class="jumbotron text-center">
   <div class="form-group">
     <label for="UnprocessedImage"><h2>Upload Image Here:-</h2></label>
     <input type="file" class="form-control-file" id="UnprocessedImage">
+    <input type = "button" onclick = "functionmyfunction()" value = "Display">  
   </div>
-</form>
+</div>
 
 <footer class="page-footer font-small bg-dark">
 
