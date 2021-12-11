@@ -1,6 +1,8 @@
+
 url="http://13.234.136.230:81/"
+
 $(document).ready(function() {
-    
+
     // $(".chosen-select").chosen({
     //     no_results_text: "Oops, nothing found!"
     // });
@@ -16,7 +18,7 @@ $(document).ready(function() {
         //  xhr.setRequestHeader("My-First-Header", "first value"); 
         //  xhr.setRequestHeader("My-Second-Header", "second value"); 
         //}
-    }).done(function(data) { 
+    }).done(function(data) {
         console.log(data);
         // $.each(data.records,function(i,obj)
         //         {
@@ -26,7 +28,7 @@ $(document).ready(function() {
         //         $(div_data).appendTo('#select_property'); 
         //         });
     });
-  
+
 });
 
 function functionmyfunction() {   
@@ -51,6 +53,7 @@ function functionmyfunction() {
     Main();  
 }  
 
+
 function ajaxCall(urlEndPoint, data) {
     $.ajax({
         type: 'GET',
@@ -71,5 +74,6 @@ function ajaxCall(urlEndPoint, data) {
         //         $(div_data).appendTo('#select_property'); 
         //         });
     });
+
 }
 

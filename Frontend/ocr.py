@@ -5,12 +5,10 @@ from PIL import Image
 
 # We then Construct an Argument Parser
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image",
-                required=True,
-                help="Path to the image folder")
-ap.add_argument("-p", "--pre_processor",
-                default="thresh",
-                help="the preprocessor usage")
+ap.add_argument("-i", "--image", required=True, help="Path to the image folder")
+ap.add_argument(
+    "-p", "--pre_processor", default="thresh", help="the preprocessor usage"
+)
 args = vars(ap.parse_args())
 
 # We then read the image with text
