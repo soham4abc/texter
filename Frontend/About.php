@@ -20,7 +20,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <img src="https://miro.medium.com/max/800/1*z9ErVNVw2KPhWN6EXSTr4A.png" style="max-width:20%;" alt="Cinque Terre">
+      <img src="./Images/PicsArt_12-11-06.58.40.jpg" style="max-width:20%;" style="max-width:20%;" alt="Cinque Terre">
     </div>
   </div>
   
