@@ -5,12 +5,10 @@ from PIL import Image
 
 # We then Construct an Argument Parser
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image",
-                required=True,
-                help="Path to the image folder")
-ap.add_argument("-p", "--pre_processor",
-                default="thresh",
-                help="the preprocessor usage")
+ap.add_argument("-i", "--image", required=True, help="Path to the image folder")
+ap.add_argument(
+    "-p", "--pre_processor", default="thresh", help="the preprocessor usage"
+)
 args = vars(ap.parse_args())
 
 # We then read the image with text
@@ -31,10 +29,10 @@ cv2.imwrite(filename, gray)
 text = pytesseract.image_to_string(Image.open(filename))
 os.remove(filename)
 print(text)
-file1 = open("MyFile.txt","a")
+file1 = open("MyFile.docx", "a")
 file1.write(text)
 
 # show the output images
-#cv2.imshow("Image Input", images)
-#cv2.imshow("Output In Grayscale", gray)
+# cv2.imshow("Image Input", images)
+# cv2.imshow("Output In Grayscale", gray)
 cv2.waitKey(0)
