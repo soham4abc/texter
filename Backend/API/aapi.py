@@ -15,17 +15,17 @@ class Users(Resource):
         parser = reqparse.RequestParser()  # initialize
         
         #parser.add_argument('userId', required=True)  # add args
-        parser.add_argument('name', required=True)
-        parser.add_argument('text', required=True)
+        #parser.add_argument('name', required=True)
+        parser.add_argument('data', required=True)
         
         args = parser.parse_args()  # parse arguments to dictionary
         
         # create new dataframe containing new values
         new_data = pd.DataFrame({
             'index': [[]],
-            'name': args['name'],
+            #'name': args['name'],
             #'city': args['city'],
-            'text':args['text']
+            'data':args['data']
         })
         # read our CSV
         data = pd.read_csv('users.csv')

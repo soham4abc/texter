@@ -53,7 +53,7 @@ function functionmyfunction() {
 
 function ajaxCall(urlEndPoint, data) {
     $.ajax({
-        type: 'GET',
+        type: 'POST',
         url: url + urlEndPoint,
         headers: {}
         //OR
