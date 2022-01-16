@@ -1,5 +1,5 @@
 
-url="http://13.234.136.230:81/"
+url="https://ocr-api.findcodes.xyz/"
 
 $(document).ready(function() {
 
