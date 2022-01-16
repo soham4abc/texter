@@ -55,7 +55,8 @@ function ajaxCall(urlEndPoint, data) {
     $.ajax({
         type: 'POST',
         url: url + urlEndPoint,
-        headers: {}
+        headers: {},
+        data:data
         //OR
         //beforeSend: function(xhr) { 
         //  xhr.setRequestHeader("My-First-Header", "first value"); 

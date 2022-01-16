@@ -4,6 +4,9 @@ import pandas as pd
 import ast
 from flask_cors import CORS
 
+#PERMANENT_PATH= "C:/xampp/htdocs/ocr/Backend/API/"
+PERMANENT_PATH= ""
+
 app = Flask(__name__)
 api = Api(app)
 CORS(app, supports_credentials=True)
@@ -28,11 +31,11 @@ class Users(Resource):
             'data':args['data']
         })
         # read our CSV
-        data = pd.read_csv('users.csv')
+        data = pd.read_csv(PERMANENT_PATH + "users.csv")
         # add the newly provided values
         data = data.append(new_data, ignore_index=True)
         # save back to CSV
-        data.to_csv('users.csv', index=False)
+        data.to_csv(PERMANENT_PATH + "users.csv", index=False)
         return {'data': data.to_dict()}, 200 
     
     def get(self):
