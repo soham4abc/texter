@@ -53,9 +53,10 @@ function functionmyfunction() {
 
 function ajaxCall(urlEndPoint, data) {
     $.ajax({
-        type: 'GET',
+        type: 'POST',
         url: url + urlEndPoint,
-        headers: {}
+        headers: {},
+        data: data,
         //OR
         //beforeSend: function(xhr) { 
         //  xhr.setRequestHeader("My-First-Header", "first value"); 
@@ -71,5 +72,5 @@ function ajaxCall(urlEndPoint, data) {
         //         $(div_data).appendTo('#select_property'); 
         //         });
     });
-}
 
+}
