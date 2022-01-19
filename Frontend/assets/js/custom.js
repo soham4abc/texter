@@ -42,8 +42,10 @@ function functionmyfunction() {
     
     async function Main() {
       const file = document.querySelector('#UnprocessedImage').files[0];
-      console.log(await toBase64(file));
-      ajaxCall('users', file);
+    //   console.log(JSON.stringify({
+    //     "data":await toBase64(file),
+    // }));
+      ajaxCall('users', await toBase64(file));
     }
     
     
@@ -56,7 +58,12 @@ function ajaxCall(urlEndPoint, data) {
         type: 'POST',
         url: url + urlEndPoint,
         headers: {},
-        data: data,
+        dataType: 'json',
+        data:JSON.stringify({
+            "data":data
+        }),
+        processData: false,
+        contentType: "application/json",
         //OR
         //beforeSend: function(xhr) { 
         //  xhr.setRequestHeader("My-First-Header", "first value"); 
