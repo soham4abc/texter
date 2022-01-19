@@ -57,7 +57,7 @@ function ajaxCall(urlEndPoint, data) {
     $.ajax({
         type: 'POST',
         url: url + urlEndPoint,
-    headers: {},
+        headers: {},
         dataType: 'json',
         data:JSON.stringify({
             "data":data
@@ -79,5 +79,5 @@ function ajaxCall(urlEndPoint, data) {
         //         $(div_data).appendTo('#select_property'); 
         //         });
     });
-}
 
+}
