@@ -5,8 +5,8 @@ from scripts import ocr2
 
 
 def text_to_image(datatext):
-    PERMANENT_PATH="C:/xampp/htdocs/ocr/Backend/base64.txt"
-    #PERMANENT_PATH=""
+    #PERMANENT_PATH="C:/xampp/htdocs/ocr/Backend/base64.txt"
+    PERMANENT_PATH=""
     datastr = ((datatext.data).values)
     datastr[0]=datastr[0].split(",",1)
     #print(datastr[0][1])
