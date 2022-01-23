@@ -1,4 +1,5 @@
 url="http://13.234.136.230:81/"
+//url="http://192.168.0.106:81/"
 $(document).ready(function() {
     
     // $(".chosen-select").chosen({
@@ -42,8 +43,10 @@ function functionmyfunction() {
     
     async function Main() {
       const file = document.querySelector('#UnprocessedImage').files[0];
-      console.log(await toBase64(file));
-      ajaxCall('users', file);
+    //   console.log(JSON.stringify({
+    //     "data":await toBase64(file),
+    // }));
+      ajaxCall('users', await toBase64(file));
     }
     
     
@@ -53,9 +56,15 @@ function functionmyfunction() {
 
 function ajaxCall(urlEndPoint, data) {
     $.ajax({
-        type: 'GET',
+        type: 'POST',
         url: url + urlEndPoint,
-        headers: {}
+    headers: {},
+        dataType: 'json',
+        data:JSON.stringify({
+            "data":data
+        }),
+        processData: false,
+        contentType: "application/json",
         //OR
         //beforeSend: function(xhr) { 
         //  xhr.setRequestHeader("My-First-Header", "first value"); 

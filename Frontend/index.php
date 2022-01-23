@@ -9,8 +9,8 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="" rel="icon">
+  <link href="" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -31,7 +31,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo"><img src="PicsArt_12-11-06.58.40.jpg" alt="" class="img-fluid"></a>
+      <a href="#hero" class="logo"><img src="PicsArt_12-11-06.58.40.jpg" alt="logo" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -108,66 +108,59 @@
 
 
      <!-- ======= Team Section ======= -->
- <section id="team" class="testimonials section-bg">
-  <div class="container">
+<section id="team" class="team section-bg">
+    <div class="container">
 
-    <div class="section-title">
-      <span>team</span>
-      <h2>Team</h2>
-      <p>We are a team of computer enthusiasts exploring new opportunities.</p>
-    </div>
+      <div class="section-title">
+        <span>Team</span>
+        <h2>Team</h2>
+        <p>We are a team of computer enthusiasts exploring new opportunities.</p>
+      </div>
 
-    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              A not so average coder trying to explore oppurtunities.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-
-            
-            <img src="IMG-20210928-WA0007.jpg" class="testimonial-img" alt="Soham Banerjee">
-            <h3>Soham Banerjee</h3>
-            <h4>Backend Developer</h4>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <img src="IMG-20210928-WA0007.jpg" alt="Soham Banerjee">
+            <h4>Soham Banerjee</h4>
+            <span>Backend Developer</span>
+            <p>A not so average coder trying to explore oppurtunities.</p>
+            <div class="social">
+              <a target="_blank" href="https://www.instagram.com/debugginglife_02"><i class="bi bi-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/soham-banerjee-6091831b3/"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
-        </div><!-- End team item -->
+        </div>
 
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              An aspiring coder looking forward to learn new things.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="IMG20191028160454.jpg" class="testimonial-img" alt="Subhadip Dutta">
-            <h3>Subhadip Dutta</h3>
-            <h4>Frontend Developer</h4>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <img src="IMG20191028160454.jpg" alt="Subhadip Dutta">
+            <h4>Subhadip Dutta</h4>
+            <span>Frontend Developer</span>
+            <p>An aspiring coder looking forward to learn new things.</p>
+            <div class="social">
+              <a target="_blank" href="https://www.instagram.com/lol_sudu"><i class="bi bi-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/subhadip-dutta-32b7551b4/"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
-        </div><!-- End team item -->
+        </div>
 
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              An experienced coder who guided his students on everything they wanted.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="Sumon Sen">
-            <h3>Sumon Sen</h3>
-            <h4>Guide &amp; Server maintainance</h4>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="member">
+            <img src="ssir.jpeg" alt="Sumon Sen">
+            <h4>Sumon Sen</h4>
+            <span>Guide &amp; Server maintainance </span>
+            <p>An experienced coder who guided his sudents with all that they needed.</p>
+            <div class="social">
+              <a target="_blank" href="https://www.instagram.com/im_sumon"><i class="bi bi-instagram"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/in/sumonsenind/"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
-        </div><!-- End team item -->
+        </div>
 
       </div>
-      <div class="swiper-pagination"></div>
+
     </div>
-
-  </div>
-</section><!-- End Teams Section -->
-
+  </section><!-- End Team Section -->
 
   
     <!-- ======= Contact Section ======= -->
