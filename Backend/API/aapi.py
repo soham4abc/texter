@@ -32,7 +32,7 @@ class Users(Resource):
         test2.text_to_image(new_data)
         # save back to CSV
         data.to_csv(PERMANENT_PATH + "users.csv", index=False)
-        return {"data": data.to_dict()}, 200
+        return {"data": "http://13.234.136.230/imagetotext/web/Backend/API/MyFile.docx"}, 200
 
     def get(self):
 
