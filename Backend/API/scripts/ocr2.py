@@ -5,19 +5,20 @@ from PIL import Image
 
 # We then Construct an Argument Parser
 
+
 def image_to_text(path):
     # We then read the image with text
-    images = cv2.imread(path) 
+    images = cv2.imread(path)
 
     # convert to grayscale image
-    gray = cv2.cvtColor(images, cv2.COLOR_BGR2GRAY)    
+    gray = cv2.cvtColor(images, cv2.COLOR_BGR2GRAY)
 
     # memory usage with image i.e. adding image to memory
     filename = "{}.jpg".format(os.getpid())
     cv2.imwrite(filename, gray)
     text = pytesseract.image_to_string(Image.open(filename))
     os.remove(filename)
-    #print(text)
+    # print(text)
     file1 = open("MyFile.docx", "w")
     file1.write(text)
 

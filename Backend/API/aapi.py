@@ -1,4 +1,4 @@
-from  scripts import test2
+from scripts import test2
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
 import pandas as pd
@@ -6,7 +6,7 @@ import ast
 from flask_cors import CORS
 
 
-#PERMANENT_PATH= "C:/xampp/htdocs/ocr/Backend/API/"
+# PERMANENT_PATH= "C:/xampp/htdocs/ocr/Backend/API/"
 PERMANENT_PATH = ""
 
 app = Flask(__name__)
