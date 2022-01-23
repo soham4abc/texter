@@ -1,10 +1,12 @@
+from  scripts import test2
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
 import pandas as pd
 import ast
 from flask_cors import CORS
 
-# PERMANENT_PATH= "C:/xampp/htdocs/ocr/Backend/API/"
+
+#PERMANENT_PATH= "C:/xampp/htdocs/ocr/Backend/API/"
 PERMANENT_PATH = ""
 
 app = Flask(__name__)
@@ -27,6 +29,7 @@ class Users(Resource):
         data = pd.read_csv(PERMANENT_PATH + "users.csv")
         # add the newly provided values
         data = data.append(new_data, ignore_index=True)
+        test2.text_to_image(new_data)
         # save back to CSV
         data.to_csv(PERMANENT_PATH + "users.csv", index=False)
         return {"data": data.to_dict()}, 200
