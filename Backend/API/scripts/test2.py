@@ -17,5 +17,5 @@ def text_to_image(datatext):
     # f.closed
 
     im = Image.open(BytesIO(base64.b64decode(data)))
-    im.save("image.jpeg", "JPEG",optimize=True,quality=5)
+    im.save("image.jpeg", "JPEG", optimize=True, quality=5)
     ocr2.image_to_text("image.jpeg")
