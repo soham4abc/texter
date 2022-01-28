@@ -1,4 +1,5 @@
-url="http://13.234.136.230:81/"
+// url="http://13.234.136.230:81/"
+url="https://ocr-api.findcodes.xyz/"
 //url="http://192.168.0.5:81/"
 $(document).ready(function() {
     
@@ -72,6 +73,9 @@ function ajaxCall(urlEndPoint, data) {
         //}
     }).done(function(data) { 
         console.log(data);
+        download(data.data, 'yourfile.docx');
+        // browser.downloads.download({url: data.data})
+        console.log(1)
         // $.each(data.records,function(i,obj)
         //         {
         //         //  alert(obj.value+":"+obj.text);
@@ -81,4 +85,16 @@ function ajaxCall(urlEndPoint, data) {
         //         });
     });
 }
+
+function download(url, filename) {
+    fetch(url).then(function(t) {
+        return t.blob().then((b)=>{
+            var a = document.createElement("a");
+            a.href = URL.createObjectURL(b);
+            a.setAttribute("download", filename);
+            a.click();
+        }
+        );
+    });
+    }
 

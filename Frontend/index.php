@@ -55,7 +55,7 @@
           <div class="form-group">
             <label for="UnprocessedImage"><h2>Upload Image Here:-</h2></label>
             <input type="file" class="form-control-file" id="UnprocessedImage">
-            <input type = "button" onclick = "functionmyfunction()" value = "Display">  
+            <input type = "button" onclick = "functionmyfunction()" value = "Upload">  
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
