@@ -8,6 +8,7 @@ from flask_cors import CORS
 
 # PERMANENT_PATH= "C:/xampp/htdocs/ocr/Backend/API/"
 PERMANENT_PATH = ""
+URL = "https://ocr.findcodes.xyz/"
 
 app = Flask(__name__)
 api = Api(app)
@@ -32,9 +33,7 @@ class Users(Resource):
         test2.text_to_image(new_data)
         # save back to CSV
         data.to_csv(PERMANENT_PATH + "users.csv", index=False)
-        return {
-            "data": "http://13.234.136.230/imagetotext/web/Backend/API/MyFile.docx"
-        }, 200
+        return {"data": URL + "/documents/MyFile.docx"}, 200
 
     def get(self):
 
