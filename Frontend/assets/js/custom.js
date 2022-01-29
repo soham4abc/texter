@@ -1,6 +1,6 @@
 // url="http://13.234.136.230:81/"
 url="https://ocr-api.findcodes.xyz/"
-//url="http://192.168.0.5:81/"
+//url="http://192.168.43.6:81/"
 $(document).ready(function() {
     
     // $(".chosen-select").chosen({
