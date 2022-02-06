@@ -24,6 +24,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -54,8 +55,26 @@
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <div class="form-group">
             <label for="UnprocessedImage"><h2>Upload Image Here:-</h2></label>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <input type="file" class="form-control-file" id="UnprocessedImage">
-            <input type = "button" onclick = "functionmyfunction()" value = "Upload">  
+            <form id="Submit" action="#" method="POST">
+            <input type="submit" onclick = "functionmyfunction()" id="btnSubmit" value="Submit"></input>
+            </form>
+            <script>
+              $(document).ready(function () {
+
+                  $("#Submit").submit(function (e) {
+
+                      
+                      e.preventDefault();
+
+                      $("#btnSubmit").attr("disabled", true);
+
+                      return true;
+
+                  });
+              });
+            </script> 
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
