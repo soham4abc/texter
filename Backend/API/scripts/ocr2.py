@@ -14,7 +14,7 @@ def image_to_text(path):
     gray = cv2.cvtColor(images, cv2.COLOR_BGR2GRAY)
 
     # memory usage with image i.e. adding image to memory
-    filename = "{}.jpg".format(os.getpid())
+    filename = "{}.png".format(os.getpid())
     cv2.imwrite(filename, gray)
     text = pytesseract.image_to_string(Image.open(filename))
     os.remove(filename)
