@@ -19,7 +19,7 @@ def image_to_text(path):
     text = pytesseract.image_to_string(Image.open(filename))
     os.remove(filename)
     # print(text)
-    file1 = open("../../Frontend/documents/MyFile.docx", "w")
+    file1 = open("../../Frontend/documents/MyFile.doc", "w")
     file1.write(text)
 
     # show the output images
