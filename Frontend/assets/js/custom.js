@@ -31,6 +31,20 @@ $(document).ready(function() {
   
 });
 
+$(document).ready(function () {
+
+    $("#Submit").submit(function (e) {
+
+                
+    e.preventDefault();
+
+    $("#btnSubmit").attr("disabled", true);
+
+  return true;
+
+});
+});
+
 function functionmyfunction() {   
     var file = $('#UnprocessedImage').prop('files');
     console.log(file);
@@ -96,5 +110,7 @@ function download(url, filename) {
         }
         );
     });
+
+    $("#btnSubmit").attr("enabled", true);
     }
 
