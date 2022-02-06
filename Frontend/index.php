@@ -87,20 +87,7 @@
 
   <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-laptop"></i></div>
-              <h4 class="title"><a href=""></a></h4>
-              <p class="description">Welcome to a world of new opportunities</p>
-            </div>
-          </div>
-
-        
+   
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
