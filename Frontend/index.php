@@ -53,29 +53,17 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <div class="form-group">
-            <label for="UnprocessedImage"><h2>Upload Image Here:-</h2></label>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-            <input type="file" class="form-control-file" id="UnprocessedImage">
-            <form id="Submit" action="#" method="POST">
-            <input type="submit" onclick = "functionmyfunction()" id="btnSubmit" value="Submit"></input>
-            </form>
-            <script>
-              $(document).ready(function () {
-
-                  $("#Submit").submit(function (e) {
-
-                      
-                      e.preventDefault();
-
-                      $("#btnSubmit").attr("disabled", true);
-
-                      return true;
-
-                  });
-              });
-            </script> 
+          <form id="Submit" action="#" method="POST" class="formSegments">
+          <div class="form-group mb-2">
+            <label for="UnprocessedImage"><h2>Upload Image Here</h2></label>       
           </div>
+          <div class="form-group mb-2">
+            <input type="file" class="form-control-file" id="UnprocessedImage">
+          </div>
+          <div class="form-group mb-2">
+            <button type="button" class="btn btn-primary" onclick = "functionmyfunction()" id="btnSubmit" value="Submit">Submit</button>
+          </div>
+        </form>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
           <img src="istockphoto-1289388658-612x612-removebg-preview.png" class="img-fluid animated" alt="">
@@ -87,20 +75,7 @@
 
   <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-laptop"></i></div>
-              <h4 class="title"><a href=""></a></h4>
-              <p class="description">Welcome to a world of new opportunities</p>
-            </div>
-          </div>
-
-        
+   
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
@@ -261,6 +236,7 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
