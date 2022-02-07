@@ -87,7 +87,7 @@ function ajaxCall(urlEndPoint, data) {
         //}
     }).done(function(data) { 
         console.log(data);
-        download(data.data, 'yourfile.doc');
+        download(data.data, 'yourfile.docx');
         // browser.downloads.download({url: data.data})
         console.log(1)
         // $.each(data.records,function(i,obj)
