@@ -2,6 +2,7 @@ import cv2
 import os, argparse
 import pytesseract
 from PIL import Image
+import aspose.words as aw
 
 # We then Construct an Argument Parser
 
@@ -19,8 +20,12 @@ def image_to_text(path):
     text = pytesseract.image_to_string(Image.open(filename))
     os.remove(filename)
     # print(text)
-    file1 = open("../../Frontend/documents/MyFile.txt", "w")
-    file1.write(text)
+    doc = aw.Document()
+    builder = aw.DocumentBuilder(doc)
+    builder.write(text)
+    doc.save("../../Frontend/documents/MyFile.docx")
+    # file1 = open("../../Frontend/documents/MyFile.txt", "w")
+    # file1.write(text)
 
     # show the output images
     # cv2.imshow("Image Input", images)
