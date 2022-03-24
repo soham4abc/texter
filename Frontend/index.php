@@ -53,6 +53,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <p class="hero-paragraph is-revealing">Upload a photo and press the submit button. Wait and the extracted text file will be downloaded automatically.</p>
           <form id="Submit" action="#" method="POST" class="formSegments">
           <div class="form-group mb-2">
             <label for="UnprocessedImage"><h2>Upload Image Here</h2></label>       
