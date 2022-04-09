@@ -114,19 +114,3 @@ function download(url, filename) {
     $("#btnSubmit").attr("enabled", true);
     }
 
-function DisplayMobile() {
-    var x = document.getElementById("mobile-menu");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-    }
-var uploadField = document.getElementById("UnprocessedImage");
-
-uploadField.onchange = function() {
-    if(this.files[0].size > 200000){
-       alert("File is too big!");
-       this.value = "";
-    };
-};

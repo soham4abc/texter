@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Study Helper</title>
-  <meta content="An application with multiple features | Optical Character Recognition | Notes | Customized search" name="description">
+  <title>jpg to txt</title>
+  <meta content="" name="description">
   <meta content="" name="keywords">
 
   <link href="" rel="icon">
@@ -24,97 +24,55 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <!-- <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
       <a href="#hero" class="logo"><img src="PicsArt_12-11-06.58.40.jpg" alt="logo" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="./ocr.php">OCR</a></li>
-          <li><a class="nav-link scrollto" href="#">Notes</a></li>
-          <li><a class="nav-link scrollto" href="./custom-search.php">Custom Search</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
+      </nav><!-- .navbar -->
 
     </div>
-  </header> -->
-  <!-- End Header -->
+  </header><!-- End Header -->
 
-<!-- This example requires Tailwind CSS v2.0+ -->
-<nav class="bg-gray-800">
-  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-    <div class="relative flex items-center justify-between h-16">
-      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-        <!-- Mobile menu button-->
-        <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onclick="DisplayMobile()">
-          <span class="sr-only">Open main menu</span>
-          <!--
-            Icon when menu is closed.
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
 
-            Heroicon name: outline/menu
-
-            Menu open: "hidden", Menu closed: "block"
-          -->
-          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-          <!--
-            Icon when menu is open.
-
-            Heroicon name: outline/x
-
-            Menu open: "block", Menu closed: "hidden"
-          -->
-          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex-shrink-0 flex items-center">
-          <img class="hidden lg:block h-8 w-auto" src="./OCR icon.png" alt="Workflow">
-        </div>
-        <div class="hidden sm:block sm:ml-6">
-          <div class="flex space-x-4">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="./index.php" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
-
-            <a href="./ocr.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">OCR</a>
-
-            <a href="https://notesxyzzz.netlify.app//" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Notes</a>
-
-            <a href="./custom-search.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Custom Search</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <p class="hero-paragraph is-revealing">Upload a photo and press the submit button. Wait and the extracted text file will be downloaded automatically.</p>
+          <form id="Submit" action="#" method="POST" class="formSegments">
+          <div class="form-group mb-2">
+            <label for="UnprocessedImage"><h2>Upload Image Here</h2></label>       
           </div>
+          <div class="form-group mb-2">
+            <input type="file" class="form-control-file" id="UnprocessedImage">
+          </div>
+          <div class="form-group mb-2">
+            <button type="button" class="btn btn-primary" onclick = "functionmyfunction()" id="btnSubmit" value="Submit">Submit</button>
+          </div>
+        </form>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="istockphoto-1289388658-612x612-removebg-preview.png" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="hidden" id="mobile-menu">
-    <div class="px-2 pt-2 pb-3 space-y-1">
-      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="./index.php" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
-
-      <a href="./ocr.php" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">OCR</a>
-
-      <a href="https://notesxyzzz.netlify.app//" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Notes</a>
-
-      <a href="./custom-search.php" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Custom Search</a>
-    </div>
-  </div>
-</nav>
-
-
-  
+  </section><!-- End Hero -->
 
   <main id="main">
 
@@ -122,55 +80,19 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
-      <div class="items-center justify-between mb-10">
-          <h1 class="header-text">Study Helper</h1>
-          </div>
 
         <div class="row">
-          
-          
-          <div class="col-lg-6 items-center justify-between">
-            <img src="./OCR image.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3><p class="fst-italic">OCR is perhaps the best features we are providing</p></h3>
-            <ul>
-              <li><i class="bi bi-check-circle"></i>This OCR software helps you to achieve higher productivity by facilitating quicker data retrieval when required. </li>
-              <li><i class="bi bi-check-circle"></i>Automated data entry tool results in reduced errors and inaccuracies, resulting in efficient data entry. </li>
-            </ul>
-            <p>
-              We value your productivity, accuracy and privacy as much you do. Our server is regularly inspected to keep it secure.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          
-          <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3><p class="fst-italic">All notes available here, don't worry about exams.</p></h3>
-            <ul>
-              <li><i class="bi bi-check-circle"></i>Students? Teachers? A learner? Don't worry, this application is for you all to take and keep urgent notes instantly. </li>
-              <li><i class="bi bi-check-circle"></i>A ready to search option to find your most needy note at least time.</li>
-            </ul>
-            <p>
-              An efficient part of our application for your help in educational growth.
-            </p>
-          </div>
           <div class="col-lg-6">
-            <img src="./Notes.png" class="img-fluid" alt="">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <img src="./Google search.jpg" class="img-fluid" alt="">
+            <img src="assets/img/about.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3><p class="fst-italic">Tired of getting wrong google results? Try this out!</p></h3>
+            <h3><p class="fst-italic">Why use our service at the first place?</p></h3>
             <ul>
-              <li><i class="bi bi-check-circle"></i>Optimised google search so that you can reach to your result instantly with less effort. </li>
-              <li><i class="bi bi-check-circle"></i>Search category wise, get categorized result. </li>
+              <li><i class="bi bi-check-circle"></i>No data logging. </li>
+              <li><i class="bi bi-check-circle"></i>Updated regularly to provide you with the best user experience. </li>
             </ul>
             <p>
-              Smart search, save time.
+              We value your privacy as much you do. Our server is regularly inspected to keep it secure.
             </p>
           </div>
         </div>
@@ -181,7 +103,7 @@
 
 
      <!-- ======= Team Section ======= -->
-<!-- <section id="team" class="team section-bg">
+<section id="team" class="team section-bg">
     <div class="container">
 
       <div class="section-title">
@@ -233,10 +155,72 @@
       </div>
 
     </div>
-  </section>End Team Section -->
+  </section><!-- End Team Section -->
 
   
-    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Contact</span>
+          <h2>Contact</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Kolkata, India</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>csenthusiasts@gmail.com</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -245,7 +229,7 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>2022</span></strong>. All Rights Reserved. By Team -<strong> XYZ </strong>.
+        &copy; Copyright <strong><span>2021</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
