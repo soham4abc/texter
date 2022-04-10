@@ -93,7 +93,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
             <h3>
-              <p class="fst-italic">Why use our service at the first place?</p>
+              <p class="fst">Why use our service at the first place?</p>
             </h3>
             <ul>
               <li><i class="bi bi-check-circle"></i>No data logging. </li>
