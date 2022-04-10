@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>jpg to txt</title>
+  <title>Texter</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -32,7 +32,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <a href="#hero" class="logo"><img src="PicsArt_12-11-06.58.40.jpg" alt="logo" class="img-fluid"></a>
+      <a href="#hero" class="logo"><img src="PicsArt_12-11-06.58.40.png" alt="logo" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -50,21 +50,27 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-        <p class="hero-paragraph is-revealing">Upload a photo and press the submit button. Wait and the extracted text file will be downloaded automatically.</p>
-          <form id="Submit" action="#" method="POST" class="formSegments">
-          <div class="form-group mb-2">
-            <label for="UnprocessedImage"><h2>Upload Image Here</h2></label>       
-          </div>
-          <div class="form-group mb-2">
-            <input type="file" class="form-control-file" id="UnprocessedImage">
-          </div>
-          <div class="form-group mb-2">
-            <button type="button" class="btn btn-primary" onclick = "functionmyfunction()" id="btnSubmit" value="Submit">Submit</button>
-          </div>
-        </form>
+          <form id="Submit" action="#" method="POST" class="formSegments d-flex justify-content-center ">
+            <div>
+              <div class="form-group mb-2 d-flex justify-content-center">
+                <label for="UnprocessedImage">
+                  <h3>
+                    <p class="fst-bold">Upload Image Here</p>
+                  </h3>
+                </label>
+              </div>
+              <div class="form-group mb-4">
+                <input type="file" class="form-control-file" id="UnprocessedImage">
+              </div>
+              <div class="form-group mb-2">
+                <button type="button" class="btn btn-primary" onclick="functionmyfunction()" id="btnSubmit" value="Submit">Submit</button>
+              </div>
+            </div>
+          </form>
+
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
           <img src="istockphoto-1289388658-612x612-removebg-preview.png" class="img-fluid animated" alt="">
@@ -76,7 +82,7 @@
 
   <main id="main">
 
-   
+
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
@@ -86,7 +92,9 @@
             <img src="assets/img/about.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content">
-            <h3><p class="fst-italic">Why use our service at the first place?</p></h3>
+            <h3>
+              <p class="fst-italic">Why use our service at the first place?</p>
+            </h3>
             <ul>
               <li><i class="bi bi-check-circle"></i>No data logging. </li>
               <li><i class="bi bi-check-circle"></i>Updated regularly to provide you with the best user experience. </li>
@@ -102,62 +110,62 @@
 
 
 
-     <!-- ======= Team Section ======= -->
-<section id="team" class="team section-bg">
-    <div class="container">
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
 
-      <div class="section-title">
-        <span>Team</span>
-        <h2>Team</h2>
-        <p>We are a team of computer enthusiasts exploring new opportunities.</p>
+        <div class="section-title">
+          <span>Team</span>
+          <h2>Team</h2>
+          <p>We are a team of computer enthusiasts exploring new opportunities.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="IMG-20210928-WA0007.jpg" alt="Soham Banerjee">
+              <h4>Soham Banerjee</h4>
+              <span>Backend Developer</span>
+              <p>A not so average coder trying to explore oppurtunities.</p>
+              <div class="social">
+                <a target="_blank" href="https://www.instagram.com/debugginglife_02"><i class="bi bi-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/soham-banerjee-6091831b3/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="IMG20191028160454.jpg" alt="Subhadip Dutta">
+              <h4>Subhadip Dutta</h4>
+              <span>Frontend Developer</span>
+              <p>An aspiring coder looking forward to learn new things.</p>
+              <div class="social">
+                <a target="_blank" href="https://www.instagram.com/lol_sudu"><i class="bi bi-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/subhadip-dutta-32b7551b4/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="ssir.jpeg" alt="Sumon Sen">
+              <h4>Sumon Sen</h4>
+              <span>Guide &amp; Server maintainance </span>
+              <p>An experienced coder who guided his sudents with all that they needed.</p>
+              <div class="social">
+                <a target="_blank" href="https://www.instagram.com/im_sumon"><i class="bi bi-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/sumonsenind/"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
+    </section><!-- End Team Section -->
 
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="member">
-            <img src="IMG-20210928-WA0007.jpg" alt="Soham Banerjee">
-            <h4>Soham Banerjee</h4>
-            <span>Backend Developer</span>
-            <p>A not so average coder trying to explore oppurtunities.</p>
-            <div class="social">
-              <a target="_blank" href="https://www.instagram.com/debugginglife_02"><i class="bi bi-instagram"></i></a>
-              <a target="_blank" href="https://www.linkedin.com/in/soham-banerjee-6091831b3/"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="member">
-            <img src="IMG20191028160454.jpg" alt="Subhadip Dutta">
-            <h4>Subhadip Dutta</h4>
-            <span>Frontend Developer</span>
-            <p>An aspiring coder looking forward to learn new things.</p>
-            <div class="social">
-              <a target="_blank" href="https://www.instagram.com/lol_sudu"><i class="bi bi-instagram"></i></a>
-              <a target="_blank" href="https://www.linkedin.com/in/subhadip-dutta-32b7551b4/"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="member">
-            <img src="ssir.jpeg" alt="Sumon Sen">
-            <h4>Sumon Sen</h4>
-            <span>Guide &amp; Server maintainance </span>
-            <p>An experienced coder who guided his sudents with all that they needed.</p>
-            <div class="social">
-              <a target="_blank" href="https://www.instagram.com/im_sumon"><i class="bi bi-instagram"></i></a>
-              <a target="_blank" href="https://www.linkedin.com/in/sumonsenind/"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Team Section -->
-
-  
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
