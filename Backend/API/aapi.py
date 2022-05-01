@@ -8,7 +8,7 @@ from flask_cors import CORS
 
 # PERMANENT_PATH= "C:/xampp/htdocs/ocr/Backend/API/"
 PERMANENT_PATH = ""
-URL = "https://ocr.findcodes.xyz/"
+URL = "https://texter.findcodes.xyz/"
 
 app = Flask(__name__)
 api = Api(app)
