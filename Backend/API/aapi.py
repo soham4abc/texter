@@ -18,7 +18,6 @@ CORS(app, supports_credentials=True)
 class Users(Resource):
     # methods go here
     def post(self):
-
         parser = reqparse.RequestParser()  # initialize
 
         parser.add_argument("data", required=True)
@@ -47,7 +46,6 @@ class Users(Resource):
 
 class Locations(Resource):
     def get(self):
-
         data = pd.read_csv("./locations.csv")  # read CSV
         data = data.to_dict()  # convert dataframe to dictionary
         return {"data": data}, 200  # return data and 200 OK code
