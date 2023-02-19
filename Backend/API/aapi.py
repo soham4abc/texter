@@ -30,10 +30,10 @@ class Users(Resource):
         # read our CSV
         data = pd.read_csv(PERMANENT_PATH + "users.csv")
         # add the newly provided values
-        data = data.append(new_data, ignore_index=True)
+        #data = data.append(new_data, ignore_index=True)
         text = test2.text_to_image(new_data)
         # save back to CSV
-        data.to_csv(PERMANENT_PATH + "users.csv", index=False)
+        #data.to_csv(PERMANENT_PATH + "users.csv", index=False)
         return {"data": URL + "/documents/MyFile.docx", "text": text}, 200
 
     def get(self):

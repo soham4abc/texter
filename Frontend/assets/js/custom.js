@@ -1,6 +1,5 @@
-// url="http://13.234.136.230:81/"
-url="https://ocr-api.enbinary.com/"
-//url="http://192.168.43.6:81/"
+//url="https://ocr-api.enbinary.com/"
+url="http://192.168.0.106:81/" //enter your backend url here
 $(document).ready(function() {
     
     // $(".chosen-select").chosen({
