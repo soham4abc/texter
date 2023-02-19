@@ -7,7 +7,6 @@ import aspose.words as aw
 
 
 def image_to_text(path):
-
     images = cv2.imread(path)
 
     gray = cv2.cvtColor(images, cv2.COLOR_BGR2GRAY)
