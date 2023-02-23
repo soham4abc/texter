@@ -1,5 +1,5 @@
 //url="https://ocr-api.enbinary.com/"
-url = "http://192.168.0.106:81/"; //enter your backend url here
+url = "http://192.168.1.38:81/"; //enter your backend url here
 
 //function to check internet connection
 $(document).ready(function () {
