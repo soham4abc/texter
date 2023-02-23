@@ -2,7 +2,7 @@ import base64
 from pickletools import optimize
 from PIL import Image
 from io import BytesIO
-from scripts import ocr2
+from scripts import ImageProcess
 
 
 def text_to_image(datatext):
@@ -14,5 +14,5 @@ def text_to_image(datatext):
     im = Image.open(BytesIO(base64.b64decode(data)))
 
     im.save("image.png", "PNG")
-    text = ocr2.image_to_text("image.png")
+    text = ImageProcess.image_to_text("image.png")
     return text

@@ -32,7 +32,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-      <a href="#hero" class="logo"><img src="PicsArt_12-11-06.58.40.png" alt="logo" class="img-fluid"></a>
+      <a href="#hero" class="logo"><img src="assets/img/hero/hero-title.png" alt="logo" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -66,19 +66,20 @@
                 <input type="file" class="form-control-file" id="UnprocessedImage">
               </div>
               <div class="form-group mb-2">
-                <button type="button" class="btn btn-primary" onclick="functionmyfunction()" id="btnSubmit" value="Submit">Submit</button>
+                <button type="button" class="btn btn-primary" onclick="uploader()" id="btnSubmit" value="Submit">Submit</button>
               </div>
             </div>
           </form>
 
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="istockphoto-1289388658-612x612-removebg-preview.png" class="img-fluid animated" alt="">
+          <img src="assets/img/hero/hero-title.png" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
 
-  </section><!-- End Hero -->
+  </section>
+  <!-- End Hero -->
 
   <main id="main">
 
@@ -123,7 +124,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="IMG-20210928-WA0007.jpg" alt="Soham Banerjee">
+              <img src="assets/img/soham-banerjee.jpg" alt="Soham Banerjee">
               <h4>Soham Banerjee</h4>
               <span>Backend Developer</span>
               <p>A not so average coder trying to explore oppurtunities.</p>
@@ -136,7 +137,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="IMG20191028160454.jpg" alt="Subhadip Dutta">
+              <img src="assets/img/subhadip-dutta.jpg" alt="Subhadip Dutta">
               <h4>Subhadip Dutta</h4>
               <span>Frontend Developer</span>
               <p>An aspiring coder looking forward to learn new things.</p>
@@ -149,7 +150,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
-              <img src="ssir.jpeg" alt="Sumon Sen">
+              <img src="assets/img/sumon-sen.jpeg" alt="Sumon Sen">
               <h4>Sumon Sen</h4>
               <span>Guide &amp; Server maintainance </span>
               <p>An experienced coder who guided his sudents with all that they needed.</p>

@@ -21,6 +21,7 @@ This software pre-trained AI models for recognition of English charachters. This
 - `sudo pip install -r requirements.txt`
 
 - In linux enviornment you may need to install additional package `sudo apt install tesseract-ocr -y`
+- Set the `.env` mentioning the address of the frontend (.env.example provided)
 - Run the `aapi.py` script located in `Backend/API`
 - send a `GET` request to `/users` endpoint. It should return `works`. That means it's working.
 
