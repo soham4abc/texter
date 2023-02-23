@@ -4,9 +4,10 @@ from flask_restful import Resource, Api, reqparse
 import pandas as pd
 import ast
 from flask_cors import CORS
+from decouple import config
 
 PERMANENT_PATH = ""
-URL = "http://localhost/Projects/charachter-recog/Frontend/"
+URL = config("BASE_URL")
 
 app = Flask(__name__)
 api = Api(app)

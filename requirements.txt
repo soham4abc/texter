@@ -5,6 +5,7 @@ Automat==0.8.0
 blinker==1.4
 certifi==2019.11.28
 chardet==3.0.4
+python-decouple==3.7
 click==8.0.3
 exception==0.1.0
 colorama==0.4.3
